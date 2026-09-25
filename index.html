@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Singh Car Wash - Luxury Car Care & Accessories</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+        body { background-color: #0b0b0b; color: #ffffff; overflow-x: hidden; }
+        header { background: linear-gradient(135deg, #161616 0%, #000000 100%); padding: 40px 20px; text-align: center; border-bottom: 2px solid #d4af37; box-shadow: 0 10px 30px rgba(0,0,0,0.8); }
+        header h1 { color: #d4af37; font-size: 2.8rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 8px; text-shadow: 0 2px 10px rgba(212,175,55,0.3); }
+        header p { color: #aaa; font-size: 1rem; font-weight: 300; letter-spacing: 1px; }
+        .container { max-width: 1100px; margin: auto; padding: 30px 15px; }
+        section { margin: 50px 0; }
+        .center-heading { text-align: center; margin-bottom: 35px; }
+        h2 { color: #d4af37; font-size: 2.2rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; display: inline-block; position: relative; padding-bottom: 10px; }
+        h2::after { content: ''; position: absolute; width: 60%; height: 3px; background-color: #d4af37; bottom: 0; left: 20%; border-radius: 2px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
+        .card { background: #141414; border-radius: 15px; overflow: hidden; box-shadow: 0 8px 25px rgba(0,0,0,0.6); border: 1px solid #222; text-align: center; padding-bottom: 20px; transition: transform 0.3s ease, border-color 0.3s ease; }
+        .card:hover { transform: translateY(-5px); border-color: #d4af37; }
+        .card img { width: 100%; height: 220px; object-fit: cover; border-bottom: 2px solid #222; }
+        .card h3 { margin: 20px 15px 15px; color: #fff; font-size: 1.2rem; font-weight: 600; }
+        .btn { display: inline-block; background: linear-gradient(135deg, #25D366 0%, #128C7E 100%); color: white; padding: 12px 25px; text-decoration: none; border-radius: 30px; font-weight: 600; font-size: 0.95rem; box-shadow: 0 4px 15px rgba(37,211,102,0.3); transition: all 0.3s ease; }
+        .btn:hover { transform: scale(1.05); box-shadow: 0 6px 20px rgba(37,211,102,0.5); }
+        .booking-box { background: rgba(20,20,20,0.8); backdrop-filter: blur(10px); padding: 35px; border-radius: 20px; max-width: 600px; margin: auto; border: 1px solid #333; box-shadow: 0 10px 40px rgba(0,0,0,0.8); }
+        .form-group { margin-bottom: 20px; text-align: left; }
+        .form-group label { display: block; margin-bottom: 8px; color: #d4af37; font-weight: 600; font-size: 0.95rem; }
+        .form-group input, .form-group select { width: 100%; padding: 14px; border-radius: 10px; border: 1px solid #333; background: #1a1a1a; color: #fff; font-size: 1rem; outline: none; transition: border-color 0.3s; }
+        .form-group input:focus, .form-group select:focus { border-color: #d4af37; }
+        .submit-btn { width: 100%; background: linear-gradient(135deg, #d4af37 0%, #aa7c11 100%); color: #000; font-weight: 700; border: none; padding: 15px; border-radius: 30px; font-size: 1.1rem; cursor: pointer; text-transform: uppercase; letter-spacing: 1px; box-shadow: 0 4px 20px rgba(212,175,55,0.4); transition: all 0.3s ease; }
+        .submit-btn:hover { opacity: 0.9; transform: translateY(-2px); }
+        .location-box { text-align: center; background: #141414; padding: 35px; border-radius: 20px; border: 1px solid #222; max-width: 600px; margin: auto; box-shadow: 0 8px 25px rgba(0,0,0,0.6); }
+        .map-btn { background: linear-gradient(135deg, #4285F4 0%, #1967D2 100%); color: white; margin-top: 15px; display: inline-block; padding: 12px 30px; border-radius: 30px; text-decoration: none; font-weight: 600; box-shadow: 0 4px 15px rgba(66,133,244,0.3); }
+        footer { text-align: center; padding: 25px; background: #050505; color: #666; margin-top: 60px; border-top: 1px solid #222; font-size: 0.9rem; }
+        @media (max-width: 600px) {
+            header h1 { font-size: 2rem; }
+            header p { font-size: 0.85rem; }
+            h2 { font-size: 1.7rem; }
+            .booking-box, .location-box { padding: 25px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Singh Car Wash</h1>
+        <p>Elite Car Care, Luxury Accessories & Instant Token Booking</p>
+    </header>
+
+    <div class="container">
+
+        <section>
+            <div class="center-heading"><h2>Our Exclusive Collection</h2></div>
+            <div class="grid">
+                <div class="card">
+                    <img src="car1.jpg" alt="Eagle Showpiece">
+                    <h3>Eagle Dashboard Showpiece</h3>
+                    <a href="https://wa.me/919855953842?text=Hello,%20I%20want%20to%20buy%20the%20Eagle%20Dashboard%20Showpiece." class="btn" target="_blank" rel="noopener">Order on WhatsApp</a>
+                </div>
+                <div class="card">
+                    <img src="car2.jpg" alt="Steering & Eagle Combo">
+                    <h3>Steering & Eagle Combo</h3>
+                    <a href="https://wa.me/919855953842?text=Hello,%20I%20want%20to%20buy%20the%20Steering%20%26%20Eagle%20Combo." class="btn" target="_blank" rel="noopener">Order on WhatsApp</a>
+                </div>
+                <div class="card">
+                    <img src="car3.jpg" alt="Golden Jaguar Showpiece">
+                    <h3>Golden Jaguar Showpiece</h3>
+                    <a href="https://wa.me/919855953842?text=Hello,%20I%20want%20to%20buy%20the%20Golden%20Jaguar%20Showpiece." class="btn" target="_blank" rel="noopener">Order on WhatsApp</a>
+                </div>
+                <div class="card">
+                    <img src="car4.jpg" alt="LED Headlights">
+                    <h3>Pro & Elite LED Headlights</h3>
+                    <a href="https://wa.me/919855953842?text=Hello,%20I%20want%20to%20enquire%20about%20LED%20Headlights." class="btn" target="_blank" rel="noopener">Order on WhatsApp</a>
+                </div>
+                <div class="card">
+                    <img src="car5.jpg" alt="Tennis Theme Showpiece">
+                    <h3>Tennis Theme Showpiece</h3>
+                    <a href="https://wa.me/919855953842?text=Hello,%20I%20want%20to%20buy%20the%20Tennis%20Theme%20Showpiece." class="btn" target="_blank" rel="noopener">Order on WhatsApp</a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="center-heading"><h2>Book Your Car Slot</h2></div>
+            <div class="booking-box">
+                <form id="bookingForm">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" required placeholder="Enter your full name">
+                    </div>
+                    <div class="form-group">
+                        <label for="carNumber">Car Number</label>
+                        <input type="text" id="carNumber" required placeholder="e.g. PB03AB1234">
+                    </div>
+                    <div class="form-group">
+                        <label for="timeSlot">Select Time Slot</label>
+                        <select id="timeSlot" required>
+                            <option value="">Choose Your Time</option>
+                            <option value="10:00 AM - 11:00 AM">10:00 AM - 11:00 AM</option>
+                            <option value="11:00 AM - 12:00 PM">11:00 AM - 12:00 PM</option>
+                            <option value="12:00 PM - 01:00 PM">12:00 PM - 01:00 PM</option>
+                            <option value="02:00 PM - 03:00 PM">02:00 PM - 03:00 PM</option>
+                            <option value="03:00 PM - 04:00 PM">03:00 PM - 04:00 PM</option>
+                            <option value="04:00 PM - 05:00 PM">04:00 PM - 05:00 PM</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="submit-btn">Get Token & Book Now</button>
+                </form>
+            </div>
+        </section>
+
+        <section>
+            <div class="center-heading"><h2>Workshop Location</h2></div>
+            <div class="location-box">
+                <p style="margin-bottom: 8px; font-size: 1.1rem; font-weight: 600; color: #fff;">Singh Car Wash, Main Workshop Road</p>
+                <p style="color: #999; font-size: 0.85rem; margin-bottom: 15px;">Tap below to navigate via Google Maps:</p>
+                <a href="https://maps.google.com/?q=Singh+Car+Wash" class="map-btn" target="_blank" rel="noopener">Open Live Location</a>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Singh Car Wash. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('bookingForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const name = document.getElementById('name').value.trim();
+            const carNumber = document.getElementById('carNumber').value.trim();
+            const timeSlot = document.getElementById('timeSlot').value;
+
+            const tokenNumber = Math.floor(100 + Math.random() * 900);
+
+            const whatsappMessage =
+                `Hello Singh Car Wash,\n\nNew Booking Request:\n` +
+                `*Token No:* #${tokenNumber}\n` +
+                `*Name:* ${name}\n` +
+                `*Car Number:* ${carNumber}\n` +
+                `*Time Slot:* ${timeSlot}\n` +
+                `*Status:* Pending\n\n` +
+                `Please confirm my booking!`;
+
+            const whatsappUrl =
+                `https://wa.me/919855953842?text=${encodeURIComponent(whatsappMessage)}`;
+
+            window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+        });
+    </script>
+
+</body>
+</html>
